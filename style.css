@@ -1,0 +1,746 @@
+@import url('https://fonts.cdnfonts.com/css/uber-move-text');
+:root{
+    --textwhite : #ffffff;
+    --textblack : #000000;
+    --color1 : #EAF6ED;
+    --gray : #f3f3f3;
+}
+
+@font-face {
+    font-family: ubermove-medium;
+    src: url(fonts/UberMoveMedium.otf);
+}
+
+@font-face {
+    font-family: ubermove-bold;
+    src: url(fonts/UberMoveBold.otf);
+}
+
+@font-face {
+    font-family: ubermove-regular;
+    src: url(fonts/UberMoveTextRegular.otf);
+}
+
+@font-face {
+    font-family: ubermove-light;
+    src: url(fonts/UberMoveTextLight.otf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav{
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 8% 0 8%;
+}
+
+.logowrapper {
+    display: flex;
+    color: var(--textwhite);
+    align-items: center;
+}
+
+.logowrapper h2{
+    font-family: 'Uber Move Text', sans-serif;
+    font-weight: 400;
+    font-size: 34px;
+    margin: 0;
+    text-align: center;
+}
+
+.logowrapper ul{
+    list-style: none;
+}
+
+.logowrapper ul li{
+    display: inline-block;
+    margin-left: 24px;
+    padding: 10px;
+    border-radius: 16px;
+}
+
+.logowrapper ul li:hover{
+    background-color: #2a2a2a;
+}
+
+.logowrapper a {
+    color: var(--textwhite);
+    text-decoration: none;
+    font-family: ubermove-medium;
+}
+
+.searchwrapper{
+    display: flex;
+    color: var(--textwhite);
+    align-items: center;
+}
+
+.searchwrapper ul{
+    list-style: none;
+    padding: 0;
+}
+
+.searchwrapper li{
+    display: inline-block;
+    margin-left: 24px;
+    padding: 10px;
+    border-radius: 16px;
+}
+
+.searchwrapper li:hover{
+    background-color: #2a2a2a;
+}
+
+.searchwrapper a{
+    color: var(--textwhite);
+    text-decoration: none;
+    font-family: ubermove-medium;
+}
+
+.account {
+    background-color: var(--textwhite);
+    color: var(--textblack);
+}
+
+#account {
+    color: var(--textblack);
+}
+
+.searchwrapper input{
+    width: 280px;
+    height: 38px;
+    border-radius: 22px;
+    padding-left: 10%;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: ubermove-medium;
+    border: none;
+}
+
+.sectionmain {
+    width: 75%;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    padding: ;
+}
+
+.section1, .section2 {
+    max-width: 50%;
+    aspect-ratio: 1/1;
+}
+
+.ridewrapper {
+    padding-top: 74px;
+}
+
+#map {
+    width: 600px;
+    height: 600px;
+}
+
+#bookride h2{
+    font-size: 64px;
+    font-family: ubermove-medium;
+    margin: 0;
+}
+
+#bookride .rentorride{
+    display: flex;
+}
+
+
+#bookride .locationselector{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 12px 8px;
+    font-size: 16px;
+    font-family: ubermove-medium;
+}
+
+.locationselector input:focus{
+    outline: none;
+}
+
+.locationselector input{
+    font-size: 16px;
+    padding-left: 8%;
+    color: var(--gray);
+    font-family: ubermove-medium;
+    background-color: var(--gray);
+}
+
+#pickup{
+    grid-column: span 4/ span 4;
+    border-radius: 8px;
+    border: none;
+}
+
+#dropoff{
+    grid-column: span 4/ span 4;
+    grid-row-start: 2;
+    border-radius: 8px;
+    border: none;
+}
+
+#date{
+    grid-column: span 2/ span 2;
+    grid-row-start: 3;
+    border-radius: 8px;
+    border: none;
+}
+
+#time{
+    grid-column: span 2/ span 2;
+    grid-column-start: 3;
+    grid-row-start: 3;
+    border-radius: 8px;
+    border: none;
+}
+
+#submit{
+    grid-row-start: 4;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    font-family: ubermove-medium;
+    background-color: var(--textblack);
+    color: var(--textwhite);
+}
+
+#Login{
+    grid-column: span 3/ span 3;
+    grid-row-start: 4;
+}
+
+.locationselector a{
+    color: var(--textblack);
+    font-size: 18px;
+    margin-left: 32px;
+    text-underline-offset: 6px;
+}
+
+.rentorride{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 54px 0;
+}
+
+.rentorride ul{
+    list-style: none;
+    padding: 0;
+}
+
+.rentorride ul li{
+    font-family: ubermove-medium;
+    text-align: center;
+    margin-top: 12px;
+    font-size: 18px;
+}
+
+#ride{
+    background-color: var(--gray);
+    border-radius: 6px;
+    width: 46px;
+    height: 46px;
+    align-content: center;
+}
+
+#rent{
+    border-radius: 6px;
+    width: 46px;
+    height: 46px;
+    align-content: center;   
+}
+
+.headings{
+    font-size: 36px;
+    font-family: ubermove-medium;
+    width: 100%;
+    padding-left: 12%;
+    box-sizing: border-box;
+    margin: 96px 0 56px 0;
+}
+
+.services{
+    width: 100%;
+    min-height: 230px;
+    padding: 0 12% 0 12%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 16px;
+    align-items: center;
+}
+
+.servicedetails{
+    background-color: var(--gray);
+    height: 180px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.servicedetails ul{
+    list-style: none;
+    margin: 0;
+    padding-left: 16px;
+}
+
+.servicedetails li{
+    margin: 16px 0;
+}
+
+.servicedetails h4{
+    margin: 0;
+    font-size: 20px;
+    font-family: ubermove-regular;
+    font-weight: 500;
+}
+
+.servicedetails p{
+    margin: 0;
+    font-size: 12px;
+    font-family: ubermove-light;
+}
+
+.servicedetails button{
+    width: 80px;
+    height: 38px;
+    font-size: 18px;
+    border: none;
+    background-color: var(--textwhite);
+    border-radius: 18px;
+}
+
+.servicedetails img{
+    width: 160px;
+}
+
+#languagelogo{
+    display: flex;
+    align-items: center;
+}
+
+.loginsection{
+    width: 100%;
+    min-height: 500px;
+    margin-top: 64px ;
+    padding: 64px 12% 64px 12%;
+    box-sizing: border-box;
+    display: grid;
+    grid-gap: 6px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    "left left left left left left right right right right right right"
+    "left left left left left left right right right right right right"
+    "left left left left left left right right right right right right"
+    "left left left left left left right right right right right right"
+    "left left left left left left right right right right right right";
+    overflow: hidden;
+}
+
+#loginarea{
+    grid-area: left;
+}
+
+#loginimg{
+    grid-area: right;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#loginarea{
+    list-style: none;
+    padding: 0;
+}
+
+.herohead{
+    width: 75%;
+    font-size: 44px;
+    font-family: ubermove-medium;
+}
+
+.heropara{
+    font-size: 18px;
+    width: 75%;
+    font-family: ubermove-regular;
+    margin: 0 0 54px 0;
+}
+
+.buttona{
+    background-color: var(--textblack);
+    padding: 16px 24px 16px 24px;
+    color: var(--textwhite);
+    font-size: 18px;
+    text-decoration: none;
+    font-family: ubermove-medium;
+    border-radius: 12px;
+}
+
+.linka{
+    display: block;
+    margin: 34px 0 0 0 ;
+    font-size: 18px;
+    font-family: ubermove-medium;
+    color: rgb(72, 72, 72);
+    text-underline-offset: 6px;
+}
+
+.uberreserve{
+    width: 100%;
+    min-height: 450px;
+    padding: 0 12% 64px 12%;
+    box-sizing: border-box;
+    display: flex;
+    gap: 24px;
+}
+
+.reservesection{
+    background-color: rgb(157, 205, 214);
+    width: 65%;
+    height: 100%;
+    padding: 44px 44px 0 44px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 12px;
+}
+
+.reservesection h2{
+    font-size: 38px;
+    font-family: ubermove-medium;
+    width: 40%;
+    margin: 0;
+}
+
+.reservesection p{
+    font-size: 22px;
+    font-family: ubermove-medium;
+}
+
+.dateselector{
+    width: 50%;
+    display: flex;
+    gap: 8px;
+}
+
+.dateselector input{
+    width: 50%;
+    height: 44px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    padding-left: 6px;
+}
+
+.reservesection button{
+    width: 50%;
+    height: 44px;
+    margin-top: 16px;
+    border: 0;
+    border-radius: 8px;
+    background-color: var(--textblack);
+    color: var(--textwhite);
+    font-size: 16px;
+}
+
+.reservesection img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 280px;
+}
+
+.benefits{
+    width: 35%;
+    height: 85%;
+    border: 2px solid rgb(228, 228, 228);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.benefits *{
+    margin: 0;
+}
+
+.benefits div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px 0 16px;
+    box-sizing: border-box;
+}
+
+.benefits h4{
+    font-family: ubermove-medium;
+    font-size: 18px;
+}
+
+.benefits p{
+    font-family: ubermove-regular;
+    padding: 12px 0 12px 0;
+    text-align: left;
+    border-bottom: 2px solid rgb(228, 228, 228);
+}
+
+.benefits img{
+    margin-right: 12px;
+}
+
+.benefits a{
+    font-size: 16px;
+    color: gray;
+    font-family: ubermove-regular;
+    text-underline-offset: 5px;
+}
+
+.servicemain{
+    width: 100%;
+    min-height: 750px;
+    padding: 64px 12% 64px 12%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.servicemain img{
+    width: 48%;
+}
+
+.servicetext{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.servicetext h2{
+    font-size: 40px;
+    font-family: ubermove-medium;
+    width: 100%;
+}
+
+.servicetext p{
+    font-size: 18px;
+    font-family: ubermove-regular;
+    line-height: 24px;
+}
+
+.buttonlink{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-right: 34px;
+}
+
+.buttonlink button{
+    width: 30%;
+    border: none;
+    background-color: var(--textblack);
+    color: var(--textwhite);
+    font-size: 18px;
+    border-radius: 8px;
+}
+
+.downloadapp{
+    width: 100%;
+    height: 480px;
+    padding: 64px 12% 64px 12%;
+    box-sizing: border-box;
+    background-color: var(--gray);
+}
+
+.downloadapp h2{
+    font-family: ubermove-medium;
+    font-size: 38px;
+}
+
+.downloadpath{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.qrcodes{
+    width: 48%;
+    height: 220px;
+    padding: 16px;
+    box-sizing: border-box;
+    display: flex;
+    background-color: var(--textwhite);
+}
+
+.downloadtexts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 16px;
+}
+
+.downloadtexts h4{
+    font-family: ubermove-medium;
+    font-size: 28px;
+    margin: 0;
+}
+
+.downloadtexts p{
+    font-family: ubermove-regular;
+    font-size: 18px;
+    margin: 0;
+}
+
+footer{
+    width: 100%;
+    min-height: 960px;
+    background-color: var(--textblack);
+    display: flex;
+    flex-direction: column;
+    padding: 64px 12% 64px 12%;
+    box-sizing: border-box;
+    color: var(--textwhite);
+}
+
+.helpcenter h2{
+    font-family: ubermove-medium;
+    font-size: 38px;
+}
+
+.helpcenter a{
+    font-family: ubermove-regular;
+    font-size: 18px;
+    color: var(--textwhite);
+    text-decoration: none;
+}
+
+.links{
+    width: 100%;
+    display: flex;
+}
+
+.links ul{
+    list-style: none;
+    min-width: 220px;
+}
+
+.links h2{
+    width: 100%;
+    font-family: ubermove-regular;
+}
+
+.links li{
+    padding: 14px;
+}
+
+.links a{
+    color: var(--textwhite);
+    text-decoration: none;
+    font-family: ubermove-regular;
+}
+
+.socials{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.fill-white{
+    filter: invert(100%);
+}
+
+.icons {
+    list-style: none;
+    padding: 0;
+    width: 50%;
+}
+
+.icons li{
+    display: inline-block;
+    margin-right: 16%;
+}
+
+.region{
+    list-style: none;
+    width: 30%;
+    text-align: right
+}
+
+.region li{
+    display: inline-block;
+    margin-left: 12%;
+    font-family: ubermove-regular;
+}
+
+.appstores {
+    width: 20%;
+    height: 70px;
+    display: flex;
+    gap: 20px;
+    padding: 34px 0 34px 0;
+}
+
+.appstores img{
+    width: 140px;
+}
+
+.copyrights{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: space-between;
+    font-family: ubermove-regular;
+}
+
+.copyrights ul{
+    list-style: none;
+    width: 30%;
+    text-align: right;
+}
+
+.copyrights li{
+    display: inline-block;
+    margin-left: 6%;
+}
+
+.copyrights a{
+    color: gray;
+    text-decoration: none;
+}
+
+.copyrights p{
+    color: gray;
+    align-content: center;
+}
