@@ -94,10 +94,10 @@ nav{
 .searchwrapper ul{
     list-style: none;
     padding: 0;
+    display: flex;
 }
 
 .searchwrapper li{
-    display: inline-block;
     margin-left: 24px;
     padding: 10px;
     border-radius: 16px;
@@ -174,6 +174,7 @@ nav{
     gap: 12px 8px;
     font-size: 16px;
     font-family: ubermove-medium;
+    position: relative;
 }
 
 .locationselector input:focus{
@@ -567,11 +568,17 @@ nav{
 
 .buttonlink button{
     width: 30%;
+    height: 50px;
     border: none;
     background-color: var(--textblack);
     color: var(--textwhite);
     font-size: 18px;
     border-radius: 8px;
+}
+
+.buttonlink a{
+    color: var(--textblack);
+    text-underline-offset: 6px;
 }
 
 .downloadapp{
@@ -743,4 +750,35 @@ footer{
 .copyrights p{
     color: gray;
     align-content: center;
+}
+
+.routeicon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    width: 20px;
+    height: 90px;
+    position: absolute;
+    left: 12px;
+    top: 20px;
+}
+
+.circle{
+    width: 10px ;
+    height: 10px;
+    border-radius: 5px;
+    background-color: var(--textblack);
+}
+
+.connection{
+    width: 1px;
+    height: 50px;
+    background-color: var(--textblack);
+}
+
+.squire{
+    width: 10px;
+    height: 10px;
+    background-color: var(--textblack);
 }
